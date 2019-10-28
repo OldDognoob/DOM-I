@@ -86,63 +86,63 @@ button.innerHTML = "Get Started";
 // Main-CONTENT
 
 //Features
-let featuresh4 = document.getElementsByTagName('h4');
-feauturesh4.innerHTML = 'Features';
+let featuresH4 = document.getElementsByTagName('h4')[0];
+featuresH4.innerHTML = "Features";
 
-let featuresContent = document.getElementsByTagName('p');
+let featuresContent = document.getElementsByTagName('p')[0];
 featuresContent.innerHTML = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 // About
-let abouth4 = document.getElementsByTagName('h4');
-abouth4.innerHTML = 'About';
+let aboutH4 = document.getElementsByTagName('h4')[1];
+aboutH4.innerHTML = "About";
 
-let aboutContent = document.getElementsByTagName('h4');
+let aboutContent = document.getElementsByTagName('h4')[2];
 aboutContent.innerHTML = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 //Services
-let servicesh4 = document.getElementsByTagName('h4');
-servicesh4.innerHTML = 'Services';
+let servicesH4 = document.getElementsByTagName('h4')[2];
+servicesH4.innerHTML = "Services";
 
-let servicesContent = document.getElementsByTagName('p');
+let servicesContent = document.getElementsByTagName('p')[2];
 servicesContent.innerHTML = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 //Product
-let producth4 = document.getElementsByTagName('h4')
-producth4.innerHTML = 'Product';
+let productH4 = document.getElementsByTagName('h4')[3];
+productH4.innerHTML = "Product";
 
-let productContent = document.getElementsByTagName('p');
+let productContent = document.getElementsByTagName('p')[3];
 productContent.innerHTML = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 //Vision
-let visionh4 = document.getElementsByTagName('h4');
-visionh4.innerHTML = 'Vision';
+let visionH4 = document.getElementsByTagName('h4')[4];
+visionH4.innerHTML = "Vision";
 
-let visionContent = document.getElementsByTagName('p');
+let visionContent = document.getElementsByTagName('p')[4];
 visionContent.innerHTML = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 // Contact
 
-let contact_H4 = document.getElementsByTagName('h4');
+let contact_H4 = document.getElementsByTagName('h4')[5];
 contact_H4.innerHTML = "Contact";
 
 // Address
 
-let address = document.getElementsByTagName('p');
+let address = document.getElementsByTagName('p')[5];
 address.innerHTML = "123 Way 456 Street Somewhere, USA";
 
 // Phone
 
-let phone = document.getElementsByTagName('p');
+let phone = document.getElementsByTagName('p')[6];
 phone.innerHTML = "1 (888) 888-8888";
 
 // Email
 
-let email = document.getElementsByTagName('p');
+let email = document.getElementsByTagName('p')[7];
 email.innerHTML = "sales@greatidea.io";
 
 // Footer
 
-let footer = document.getElementsByTagName('p');
+let footer = document.getElementsByTagName('p')[8];
 footer.innerHTML = "Copyright Great Idea! 2018"
 
 
