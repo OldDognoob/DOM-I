@@ -55,105 +55,131 @@ middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 // nav-items
 
 let services = document.getElementsByTagName('a')[0];
-services.innerHTML = 'Services';
+services.innerText = 'Services';
 
 let product = document.getElementsByTagName('a')[1];
-product.innerHTML ='Product';
+product.innerText ='Product';
 
 let vision = document.getElementsByTagName('a')[2];
-vision.innerHTML = 'Vision';
+vision.innerText = 'Vision';
 
 let features = document.getElementsByTagName('a')[3];
-features.innerHTML = 'Features';
+features.innerText = 'Features';
 
 let about = document.getElementsByTagName('a')[4];
-about.innerHTML = 'About';
+about.innerText = 'About';
 
 let contact = document.getElementsByTagName('a')[5];
-contact.innerHMTL = 'Contact';
+contact.innerText = 'Contact';
 
 // TOP TITLE
 
 let h1 = document.getElementsByTagName('h1')[0];
-h1.innerHTML = "DOM Is Awesome";
+h1.innerText = "DOM Is Awesome";
 
 // BUTTON
 
 let button = document.getElementsByTagName("button")[0];
-button.innerHTML = "Get Started";
+button.innerText = "Get Started";
 
 
 // Main-CONTENT
 
 //Features
+
 let featuresH4 = document.getElementsByTagName('h4')[0];
-featuresH4.innerHTML = "Features";
+featuresH4.innerText = "Features";
+
 
 let featuresContent = document.getElementsByTagName('p')[0];
-featuresContent.innerHTML = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+featuresContent.innerText = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 // About
+
 let aboutH4 = document.getElementsByTagName('h4')[1];
-aboutH4.innerHTML = "About";
+aboutH4.innerText = "About";
+
 
 let aboutContent = document.getElementsByTagName('h4')[2];
-aboutContent.innerHTML = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+aboutContent.innerText = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 //Services
+
 let servicesH4 = document.getElementsByTagName('h4')[2];
-servicesH4.innerHTML = "Services";
+servicesH4.innerText = "Services";
+
 
 let servicesContent = document.getElementsByTagName('p')[2];
-servicesContent.innerHTML = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+servicesContent.innerText = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 //Product
+
 let productH4 = document.getElementsByTagName('h4')[3];
-productH4.innerHTML = "Product";
+productH4.innerText = "Product";
+
 
 let productContent = document.getElementsByTagName('p')[3];
-productContent.innerHTML = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+productContent.innerText = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 //Vision
+
 let visionH4 = document.getElementsByTagName('h4')[4];
-visionH4.innerHTML = "Vision";
+visionH4.innerText = "Vision";
+
 
 let visionContent = document.getElementsByTagName('p')[4];
-visionContent.innerHTML = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+visionContent.innerText = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 // Contact
 
+
 let contact_H4 = document.getElementsByTagName('h4')[5];
-contact_H4.innerHTML = "Contact";
+contact_H4.innerText = "Contact";
 
 // Address
 
+
 let address = document.getElementsByTagName('p')[5];
-address.innerHTML = "123 Way 456 Street Somewhere, USA";
+address.innerText = "123 Way 456 Street Somewhere, USA";
 
 // Phone
 
+
 let phone = document.getElementsByTagName('p')[6];
-phone.innerHTML = "1 (888) 888-8888";
+phone.innerText = "1 (888) 888-8888";
 
 // Email
 
+
 let email = document.getElementsByTagName('p')[7];
-email.innerHTML = "sales@greatidea.io";
+email.innerText = "sales@greatidea.io";
 
 // Footer
 
+
 let footer = document.getElementsByTagName('p')[8];
-footer.innerHTML = "Copyright Great Idea! 2018"
+footer.innerText = "Copyright Great Idea! 2018"
 
 
-// color Green
+// ADD & CHANGE COLOR
 
+let newLink = document.createElement('a');
+newLink.textContent = 'BoomTeam';
+newLink.style.color = 'green';
 
+// appendChild()
 
+let nav = document.querySelector('nav');
+nav.appendChild(newLink);
 
+// ADD & CHANGE COLOR
 
+let extraLink = document.createElement('a');
+extraLink.textContent = 'GreekLatern';
+extraLink.style.color = 'green';
 
+// prepend()
 
-
-
+let newNav = document.querySelector('nav');
+newNav.prepend(extraLink);  
 
