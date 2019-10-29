@@ -100,7 +100,7 @@ let aboutH4 = document.getElementsByTagName('h4')[1];
 aboutH4.innerText = "About";
 
 
-let aboutContent = document.getElementsByTagName('h4')[2];
+let aboutContent = document.getElementsByTagName('h4')[1];
 aboutContent.innerText = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 //Services
