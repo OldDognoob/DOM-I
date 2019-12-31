@@ -195,7 +195,7 @@ let buttonClick = document.querySelector('button');
 
 buttonClick.innerText = 'Get Started';
 
-//stretch: adding a click event listener, changes background color when clicked
+//stretch goal: adding a click event listener, background color goes to pink when we clicked
 
 buttonClick.addEventListener('click', (n) => {
   n.target.style.backgroundColor = 'pink';
