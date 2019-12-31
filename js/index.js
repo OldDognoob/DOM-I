@@ -80,8 +80,10 @@ contact.innerText = 'Contact';
 
 // TOP TITLE
 
-let h1 = document.getElementsByTagName('h1')[0];
-h1.innerText = "DOM Is Awesome";
+// let h1 = document.getElementsByTagName('h1')[0];
+// h1.innerText = "DOM Is Awesome";
+let h1 = document.querySelector("h1");
+h1.innerText = "DOM\r\n  IS \r\n AWESOME";
 
 // BUTTON
 
