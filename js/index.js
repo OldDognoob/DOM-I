@@ -189,4 +189,14 @@ extraLink.style.color = 'green';
 let newNav = document.querySelector('nav');
 newNav.prepend(extraLink);  
 
+//button
 
+let buttonClick = document.querySelector('button');
+
+buttonClick.innerText = 'Get Started';
+
+//stretch: adding a click event listener, changes background color when clicked
+
+buttonClick.addEventListener('click', (n) => {
+  n.target.style.backgroundColor = 'pink';
+});
