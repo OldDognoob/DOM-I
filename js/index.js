@@ -42,6 +42,12 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+// let links = document.querySelectorAll("header nav a")
+// for(let i = 0; i< links.length;i++){
+//   links[i].innerHTML = siteContent.nav[`nav-item-${i + 1}`]
+//   links[i].style.color = "green"
+// }
+
 // Top Image
 
 let ctaimg = document.getElementById(`cta-img`);
@@ -82,7 +88,6 @@ h1.innerText = "DOM Is Awesome";
 let button = document.getElementsByTagName("button")[0];
 button.innerText = "Get Started";
 
-
 // Main-CONTENT
 
 //Features
@@ -100,8 +105,9 @@ let aboutH4 = document.getElementsByTagName('h4')[1];
 aboutH4.innerText = "About";
 
 
-let aboutContent = document.getElementsByTagName('h4')[1];
+let aboutContent = document.getElementsByTagName('p')[1];
 aboutContent.innerText = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
 
 //Services
 
@@ -182,4 +188,5 @@ extraLink.style.color = 'green';
 
 let newNav = document.querySelector('nav');
 newNav.prepend(extraLink);  
+
 
