@@ -20,4 +20,4 @@ function newClock () {
     document.getElementById("currentSeconds").innerHTML = currentSeconds;
 }
 
-setInterval(newClock, 100);
+setInterval(newClock, 10);

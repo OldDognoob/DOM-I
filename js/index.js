@@ -202,3 +202,9 @@ buttonClick.innerText = 'Get Started';
 buttonClick.addEventListener('click', (n) => {
   n.target.style.backgroundColor = 'pink';
 });
+
+//update styles through the page
+document.querySelector(".cta-text h1").style.color="lightblue";
+console.log(newAnchorLast);
+
+

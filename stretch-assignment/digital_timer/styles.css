@@ -6,9 +6,15 @@ body {
 
 .digit {
   display: inline-block;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .redDigit {
   color: red;
+}
+
+button{
+  border: 2px solid green;
+  cursor: pointer;
+  border-radius: 5px;
 }
