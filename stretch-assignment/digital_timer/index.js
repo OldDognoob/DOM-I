@@ -1,23 +1,53 @@
+let intervalDisplay = window.setInterval(cb, 10);
+let cumulatedSecondTens = 0;
+let cumulatedSeconds = 0;
+let cumulatedmsHundred = 0;
+let cumulatedmsTens = 0;
+const secondTens = document.getElementById("secondTens");
+const seconds = document.getElementById("secondOnes");
+const msHundreds = document.getElementById("msHundreds");
+const msTens = document.getElementById("msTens");
+const timer = document.querySelectorAll(".digits div");
 
-function newClock () {
-    const currentDate = new Date();
-    var currentHours = currentDate.getHours ();
-    var currentMinutes = currentDate.getMinutes ();
-    var currentSeconds = currentDate.getSeconds ();
+function cb() {
+    cumulatedmsTens += 1;
+    if (cumulatedmsTens === 10) {
+        incrementmsHundreds();
+    }
 
-    if (currentHours < 10) {
-        currentHours = "0" + currentHours;
+    if (cumulatedmsHundred === 10) {
+        incrementSeconds();
     }
-    if(currentMinutes < 10){
-        currentMinutes = "0" + currentMinutes;
+    if (cumulatedSeconds === 10 ) {
+        incrementTens();
+        timer.forEach( item => item.style.color = "red");
     }
-    if(currentSeconds < 10){
-        currentSeconds = "0" + currentSeconds;
-    }
-    
-    document.getElementById("currentHours").innerHTML = currentHours;
-    document.getElementById("currentMinute").innerHTML = currentMinutes;
-    document.getElementById("currentSeconds").innerHTML = currentSeconds;
+
+    secondTens.textContent = cumulatedSecondTens;
+    seconds.textContent = cumulatedSeconds;
+    msHundreds.textContent = cumulatedmsHundred;
+    msTens.textContent = cumulatedmsTens;
 }
 
-setInterval(newClock, 10);
+function stop() {
+    window.clearInterval(intervalDisplay)
+}
+
+function incrementmsHundreds() {
+    cumulatedmsTens = 0;
+    cumulatedmsHundred += 1;
+}
+
+function incrementSeconds() {
+    cumulatedmsHundred = 0;
+    cumulatedSeconds += 1;
+}
+
+function incrementTens(){
+    cumulatedSeconds = 0;
+    cumulatedSecondTens = 1;
+    stop();
+}
+
+console.log(timer);
+    
