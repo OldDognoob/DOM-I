@@ -38,5 +38,173 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// let links = document.querySelectorAll("header nav a")
+// for(let i = 0; i< links.length;i++){
+//   links[i].innerHTML = siteContent.nav[`nav-item-${i + 1}`]
+//   links[i].style.color = "green"
+// }
+
+// Top Image
+
+let ctaimg = document.getElementById(`cta-img`);
+ctaimg.setAttribute('src', siteContent["cta"]["img-src"])
+
+// Middle Image
+
+let middleimg = document.getElementById(`middle-img`);
+middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// nav-items
+
+let services = document.getElementsByTagName('a')[0];
+services.innerText = 'Services';
+
+let product = document.getElementsByTagName('a')[1];
+product.innerText ='Product';
+
+let vision = document.getElementsByTagName('a')[2];
+vision.innerText = 'Vision';
+
+let features = document.getElementsByTagName('a')[3];
+features.innerText = 'Features';
+
+let about = document.getElementsByTagName('a')[4];
+about.innerText = 'About';
+
+let contact = document.getElementsByTagName('a')[5];
+contact.innerText = 'Contact';
+
+// TOP TITLE
+
+// let h1 = document.getElementsByTagName('h1')[0];
+// h1.innerText = "DOM Is Awesome";
+let h1 = document.querySelector("h1");
+h1.innerText = "DOM\r\n  IS \r\n AWESOME";
+
+// BUTTON
+
+let button = document.getElementsByTagName("button")[0];
+button.innerText = "Get Started";
+
+// Main-CONTENT
+
+//Features
+
+let featuresH4 = document.getElementsByTagName('h4')[0];
+featuresH4.innerText = "Features";
+
+
+let featuresContent = document.getElementsByTagName('p')[0];
+featuresContent.innerText = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+// About
+
+let aboutH4 = document.getElementsByTagName('h4')[1];
+aboutH4.innerText = "About";
+
+
+let aboutContent = document.getElementsByTagName('p')[1];
+aboutContent.innerText = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+
+//Services
+
+let servicesH4 = document.getElementsByTagName('h4')[2];
+servicesH4.innerText = "Services";
+
+
+let servicesContent = document.getElementsByTagName('p')[2];
+servicesContent.innerText = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+//Product
+
+let productH4 = document.getElementsByTagName('h4')[3];
+productH4.innerText = "Product";
+
+
+let productContent = document.getElementsByTagName('p')[3];
+productContent.innerText = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+//Vision
+
+let visionH4 = document.getElementsByTagName('h4')[4];
+visionH4.innerText = "Vision";
+
+
+let visionContent = document.getElementsByTagName('p')[4];
+visionContent.innerText = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+// Contact
+
+
+let contact_H4 = document.getElementsByTagName('h4')[5];
+contact_H4.innerText = "Contact";
+
+// Address
+
+
+let address = document.getElementsByTagName('p')[5];
+address.innerText = "123 Way 456 Street Somewhere, USA";
+
+// Phone
+
+
+let phone = document.getElementsByTagName('p')[6];
+phone.innerText = "1 (888) 888-8888";
+
+// Email
+
+
+let email = document.getElementsByTagName('p')[7];
+email.innerText = "sales@greatidea.io";
+
+// Footer
+
+
+let footer = document.getElementsByTagName('p')[8];
+footer.innerText = "Copyright Great Idea! 2018"
+
+
+// ADD & CHANGE COLOR
+
+let newLink = document.createElement('a');
+newLink.textContent = 'BoomTeam';
+newLink.style.color = 'green';
+
+// appendChild()
+
+let nav = document.querySelector('nav');
+nav.appendChild(newLink);
+
+// ADD & CHANGE COLOR
+
+let extraLink = document.createElement('a');
+extraLink.textContent = 'GreekLatern';
+extraLink.style.color = 'green';
+
+// prepend()
+
+let newNav = document.querySelector('nav');
+newNav.prepend(extraLink);  
+
+//button
+
+let buttonClick = document.querySelector('button');
+
+buttonClick.innerText = 'Get Started';
+
+//stretch goal: adding a click event listener, background color goes to pink when we clicked
+
+buttonClick.addEventListener('click', (n) => {
+  n.target.style.backgroundColor = 'pink';
+});
+
+//update styles through the page
+document.querySelector(".cta-text h1").style.color="lightblue";
+console.log(newAnchorLast);
+
+
